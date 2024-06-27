@@ -1,0 +1,892 @@
+@font-face {
+    font-family: Lalezar;
+    src: url(assets/fonts/Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: Laila;
+    src: url(assets/fonts/Laila-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alfa;
+    src: url(assets/fonts/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Alegreya;
+    src: url(assets/fonts/AlegreyaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(assets/fonts/Itim-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jockey;
+    src: url(assets/fonts/JockeyOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D91F1F;
+}
+
+.header--logo{
+    width: 160px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+}
+
+.logo--image{
+    width: 68px;
+    height: 50px;
+    background-image: url(assets/vectors/logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo--title{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Lalezar;
+    color: white;
+}
+
+.header--navigationPanel{
+    width: 400px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.header--navigationPanel > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: Laila;
+    line-height: 37.2px;
+    color: white;
+}
+
+.header--navigationPanel > ul > li{
+    cursor: pointer;
+}
+
+.header--search{
+    width: 213px;
+    height: 37px;
+    position: relative;
+    /* border: 2px solid black; */
+}
+
+.header--search > input{
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.search-vector{
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    background-image: url(assets/vectors/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mainSection{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(assets/img/mainSectionBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainSection--infoBox{
+    width: 624px;
+    height: 300px;
+    margin-bottom: -350px;
+    margin-left: 300px;
+    /* border: 1px solid green; */
+}
+
+.infoBox--title{
+    width: 100%;
+    height: 157px;
+}
+
+.infoBox--title > p{
+    font-size: 55px;
+    color: #FF0000;
+    font-family: Alfa;
+}
+
+.infoBox--shopNow{
+    width: 205px;
+    height: 41px;
+}
+
+.infoBox--shopNow > button{
+    width: 100%;
+    height: 100%;
+    font-family: Alfa;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    background-color: #EE2525;
+}
+
+.section-aboutUs{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+
+.section-aboutUs-grayLayer{
+    width: 80%;
+    height: 340px;
+    background-image: url(assets/vectors/ABOUT\ US.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    z-index: 2;
+    /* background-color: yellow; */
+}
+
+.section-aboutUs-greenLayer{
+    width: 80%;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    background-image: url(assets/vectors/ABOUT\ US-green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* background-color: blue; */
+}
+
+
+.section-aboutUs-info{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: gray; */
+}
+
+.info-Text{
+    width: 450px;
+    height: 260px;
+    position: absolute;
+    left: 70px;
+    top: 350px;
+    font-size: 18px;
+    font-family: Alegreya;
+}
+
+.info-Image{
+    width: 950px;
+    height: 575px;
+    position: absolute;
+    z-index: 0;
+    top: 190px;
+    right: 0px;
+    background-image: url(assets/img/aboutUsImg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-hotSellers{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hotSellers--title{
+    width: 900px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    left: 150px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alfa;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #B2B2B2;
+}
+
+.red-title{
+    z-index: 2;
+    top: 75px;
+    left: 160px;
+    color: #FF0202;
+}
+
+.hotSeller--sneaker-image{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    z-index: 3;
+    bottom: 170px;
+    left: 100px;
+    background-image: url(assets/vectors/sneaker.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hotSeller--restangle{
+    width: 1800px;
+    height: 780px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    background-image: url(assets/vectors/Rectangle\ 39.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid black; */
+}
+
+.hotSeller--discountVector{
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 570px;
+    bottom: 140px;
+    z-index: 2;
+    background-image: url(assets/vectors/discount.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 2px solid black; */
+}
+
+.discount--valueVector{
+    width: 650px;
+    height: 300px;
+    position: absolute;
+    left: 620px;
+    bottom: 140px;
+    z-index: 5;
+    background-image: url(assets/vectors/50perc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid black; */
+}
+
+.restangle--decor{
+    width: 900px;
+    height: 632px;
+    position: absolute;
+    z-index: -1;
+    left: 520px;
+    background-image: url(assets/vectors/restangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.restangle--decor2{
+    width: 1170px;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    background-image: url(assets/vectors/restangle2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.categories-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: red;
+}
+
+.categories-section--heading{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alegreya;
+    font-size: 80px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    /* border: 1px solid black; */
+}
+
+.categories-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.categoryBox{
+    width: 500px;
+    height: 600px;
+    /* border: 2px solid blue; */
+}
+
+.categoryBox--heading{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Alegreya;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+.categoryBox--image{
+    width: 100%;
+    height: 520px;
+    background-color: white;
+}
+
+.boots{
+    background-image: url(assets/img/boots.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sneakers{
+    background-image: url(assets/img/sneakers.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.high-hells{
+    background-image: url(assets/img/high-heels.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slide-circles{
+    width: 150px;
+    height: 34px;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    gap: 10px;
+    /* border: 2px solid black; */
+}
+
+.slideOut{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+}
+
+.onSlide{
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    background-color: #898989;
+}
+
+/* Sneakers Page */
+
+.sneakers-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.categories-selector{
+    width: 246px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 58px;
+    text-transform: uppercase;
+    background-color: #FF7979;
+}
+
+.sneakers-container{
+    width: 1280px;
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: gray; */
+}
+
+.sneakers-firstLineBox{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.sneakers-SecondLineBox{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.sneaker-card{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-color: white; */
+}
+
+.sneaker-card > p{
+    position: absolute;
+    bottom: 90px;
+    left: 70px;
+    font-family: Itim;
+    color: #000000;
+}
+
+.card--image{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-radius: 58px;
+    background-color: #9CCF97;
+}
+
+.sneaker1-1{
+    background-image: url(assets/img/sneaker1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker1-2{
+    background-image: url(assets/img/sneaker2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker1-3{
+    background-image: url(assets/img/sneaker3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker1-4{
+    background-image: url(assets/img/sneaker4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker2-1{
+    background-image: url(assets/img/sneaker5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker2-2{
+    background-image: url(assets/img/sneaker6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker2-3{
+    background-image: url(assets/img/sneaker7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker2-4{
+    background-image: url(assets/img/sneaker8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.sneaker-size{
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: Itim;
+    border-radius: 16px;
+    position: absolute;
+    top: 180px;
+    z-index: -1;
+    background-color: #D9D9D9;
+}
+
+.items-container{
+    width: 214px;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.categories--title{
+    width: 214px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    font-family: Jockey;
+    color: black;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.selectedItem{
+    width: 214px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-family: Jockey;
+    text-transform: uppercase;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.selectorForm-item{
+    width: 214px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: white;
+    font-family: Jockey;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.addToCart{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    bottom: 60px;
+    right: 25px;
+    cursor: pointer;
+    background-image: url(assets/vectors/cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Sneakers Page End */
+
+footer{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer--inTouch{
+    width: 74%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #DA0000;
+}
+
+.inTouch--heading{
+    width: 776px;
+    height: 153px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: Alegreya;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.contact-methods{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    padding-left: 100px;
+    /* border: 2px solid blue; */
+}
+
+.method-call-box{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: Alegreya;
+    text-transform: uppercase;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.method--call{
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/vectors/call.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid black; */
+}
+
+.method-visit-box{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: Alegreya;
+    text-transform: uppercase;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.method--visit{
+    width: 45px;
+    height: 45px;
+    background-image: url(assets/vectors/location.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid black; */
+}
+
+.method--textUs-box{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: Alegreya;
+    text-transform: uppercase;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.method--textUs{
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/vectors/text.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid black; */
+}
+
+.ourTeam{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Alegreya;
+    padding-left: 130px;
+    font-size: 30px;
+    color: white;
+    /* border: 2px solid black; */
+}
+
+.profileForm{
+    width: 398px;
+    height: 376px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #DD1F26;
+}
+
+.profile-name{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.profile-nameInputVector{
+    width: 25px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url(assets/vectors/profile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+
+.profile-name > input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 30px;
+}
+
+.profile-password{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.profile-passwordInputVector{
+    width: 25px;
+    height: 30px;
+    background-image: url(assets/vectors/password.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.profile-password > input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 30px;
+}
+
+.form-submit{
+    width: 90px;
+    height: 30px;
+}
+
+.form-submit > button{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #DD1F26;
+    font-family: Alegreya;
+    font-weight: 900;
+    background-color: #9DECFF;
+    cursor: pointer;
+}
